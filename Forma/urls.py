@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from Forma import views
+from Forma.views import home
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.home),
 ]
